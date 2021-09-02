@@ -1,0 +1,11 @@
+<mat-card class="task" [ngClass]="{ reminder: task.reminder }" [ngStyle]="{'margin-bottom': '15px'}" (dblclick)="onToggle(task)">
+  <mat-grid-list cols="2" rowHeight="10:1">
+    <mat-grid-tile> 
+        <h4>{{task.text}}</h4>&nbsp;&nbsp;&nbsp;
+        <h5>{{task.day}}</h5>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-button (click)="onDelete(task)"></app-button>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>

@@ -1,0 +1,10 @@
+
+    <mat-grid-list cols="2" rowHeight="10:1">
+      <mat-grid-tile> 
+          <h1>{{title}}</h1>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <app-button color="{{showAddTask ? 'red' : 'green'}}" (btnClick)="toggleAddTask()"></app-button>
+      </mat-grid-tile>
+    </mat-grid-list>
+

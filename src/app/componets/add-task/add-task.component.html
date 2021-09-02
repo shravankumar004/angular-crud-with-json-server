@@ -1,0 +1,20 @@
+<form *ngIf="showAddTask" (ngSubmit)="onSubmit()">
+<mat-card class="custom">
+  <mat-form-field appearance="fill" class="custom">
+    <mat-label>Input</mat-label>
+    <input matInput id="text" name="text" [(ngModel)]="text" />
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="custom">
+    <mat-label>Day</mat-label>
+    <input matInput id="day" name="day" [(ngModel)]="day" />
+  </mat-form-field>
+  <mat-checkbox
+    class="custom"
+    id="reminder"
+    name="reminder"
+    [(ngModel)]="reminder"
+  ></mat-checkbox>
+
+  <button class="custom" mat-raised-button color="primary">Submit</button>
+</mat-card>
+</form>
